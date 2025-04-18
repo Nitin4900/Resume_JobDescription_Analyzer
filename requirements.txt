@@ -1,12 +1,12 @@
-streamlit==1.25.0
-python-dotenv==1.0.0
-pdfminer.six==20221105
-nltk==3.8.1
-spacy==3.5.2
-streamlit-tags==0.1.6
-azure-storage-blob==12.14.1
-python-dateutil==2.8.2
-groq==0.0.1
-# Install spacy model automatically after installing spacy
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+streamlit
+python-dotenv
+pdfminer.six
+nltk
+spacy>=3.7.2,<3.8.0        # spaCy v3.7.x adds Python 3.12 support  [oai_citation_attribution:0‡spacy.io](https://spacy.io/usage/v3-7?utm_source=chatgpt.com)
+streamlit-tags
+azure-storage-blob
+python-dateutil
+groq
 
+# SpaCy English model for v3.7.x (must match the spaCy version above)
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
